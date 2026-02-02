@@ -55,7 +55,7 @@ const Header = () => {
           <h1 className="text-3xl text-red-500 font-semibold">ESHOP</h1>
         </Link>
         {menubar.map((i) => (
-          <ul className="group relative">
+          <ul className="hidden sm:block group relative">
             <li className="cursor-pointer hover:text-red-600 font-semibold">
               <Link to={i.link}>{i.level}</Link>
             </li>
@@ -86,7 +86,7 @@ const Header = () => {
             className="absolute top-1/2 -translate-y-1/2 right-3 text-gray-600"
           />
         </div>
-        <FaShoppingCart size={20} className="text-gray-600" />
+        <FaShoppingCart size={22} className="text-gray-600" />
       </div>
     </div>
   );
